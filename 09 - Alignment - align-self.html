@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Alignment - align-items align-content align-self</title>
+    <style>
+        .box {
+            flex: 1;
+            color: white;
+            text-align: center;
+            text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            margin: 10px;
+        }
+
+        /* Colours for each box */
+
+        .box1 {
+            background: #1abc9c;
+        }
+
+        .box2 {
+            background: #3498db;
+            align-self: center;
+        }
+
+        .box3 {
+            background: #9b59b6;
+        }
+
+        .box4 {
+            background: #34495e;
+            padding-bottom: 50px;
+        }
+
+        .box5 {
+            background: #f1c40f;
+        }
+
+        .box6 {
+            background: #e67e22;
+            padding-bottom: 10px;
+        }
+
+        .box7 {
+            background: #e74c3c;
+            align-self: flex-end;
+        }
+
+        .box8 {
+            background: #bdc3c7;
+        }
+
+        .box9 {
+            background: #2ecc71;
+            align-self: stretch;
+        }
+
+        .box10 {
+            background: #16a085;
+        }
+
+        .container {
+            display: flex;
+            border: 5px solid black;
+            min-height: 100vh;
+            font-size: 100px;
+            align-items: flex-start;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        align-self overrides the value set by align-items.
+        align-items is at flex container level, align-self is at flex item level
+    -->
+    <div class="container">
+        <div class="box box1">1</div>
+        <!-- 
+                      
+         -->
+        <div class="box box2">2
+            <br>:)</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+        <div class="box box6">6</div>
+        <div class="box box7">7</div>
+        <div class="box box8">8</div>
+        <div class="box box9">9</div>
+    </div>
+
+</body>
+
+</html>

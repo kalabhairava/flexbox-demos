@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Centering with justify-content</title>
+    <style>
+        .box {
+            color: white;
+            font-size: 100px;
+            text-align: center;
+            text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
+            padding: 10px;
+        }
+
+        /* Colours for each box */
+
+        .box1 {
+            background: #1abc9c;
+        }
+
+        .box2 {
+            background: #3498db;
+        }
+
+        .box3 {
+            background: #9b59b6;
+        }
+
+        .box4 {
+            background: #34495e;
+        }
+
+        .box5 {
+            background: #f1c40f;
+        }
+
+        .box6 {
+            background: #e67e22;
+        }
+
+        .box7 {
+            background: #e74c3c;
+        }
+
+        .box8 {
+            background: #bdc3c7;
+        }
+
+        .box9 {
+            background: #2ecc71;
+        }
+
+        .box10 {
+            background: #16a085;
+        }
+
+        .container {
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: space-between;
+            border: 5px solid black;
+            min-height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        Centering Elements with justify-content
+
+        justify-content determines how the elements are aligned on the main axis
+
+        Possible values:
+        1. flex-start => items aligned to the starting of the main axis
+        2. flex-end => items aligned to the end of the main axis
+        3. center => items aligned to the center of the main axis
+        4. space-between => adds 1st item to the start, and last item to the end. Adds space between all items in the middle.
+        5. space-around => same as space-between, but adds space before the 1st item and after the last item
+    -->
+    <div class="container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+        <div class="box box6">6</div>
+        <div class="box box7">7</div>
+        <div class="box box8">8</div>
+        <div class="box box9">9</div>
+        <div class="box box10">10</div>
+    </div>
+
+</body>
+
+</html>

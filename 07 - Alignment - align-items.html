@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Alignment - align-items align-content align-self</title>
+    <style>
+        .box {
+            color: white;
+            text-align: center;
+            text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
+            padding: 10px;
+        }
+
+        /* Colours for each box */
+
+        .box1 {
+            background: #1abc9c;
+            font-size: 1em;
+        }
+
+        .box2 {
+            background: #3498db;
+            font-size: 1.5em;
+        }
+
+        .box3 {
+            background: #9b59b6;
+            font-size: 2em;
+        }
+
+        .box4 {
+            background: #34495e;
+            font-size: 2.5em;
+        }
+
+        .box5 {
+            background: #f1c40f;
+            font-size: 3em;
+        }
+
+        .box6 {
+            background: #e67e22;
+            font-size: 3em;
+        }
+
+        .box7 {
+            background: #e74c3c;
+            font-size: 2.5em;
+        }
+
+        .box8 {
+            background: #bdc3c7;
+            font-size: 2em;
+        }
+
+        .box9 {
+            background: #2ecc71;
+            font-size: 1.5em;
+        }
+
+        .box10 {
+            background: #16a085;
+            font-size: 1em;
+        }
+
+        .container {
+            display: flex;
+            /* flex-direction: row; */
+            justify-content: space-around;
+            align-items: center;
+            border: 5px solid black;
+            min-height: 100vh;
+            font-size: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        align-items => align items along cross axis. => possible values are same as that of justify-content
+            default value: strech => streches all the way to the end
+            baseline: aligns all the items to a baseline.
+            To center an item vertically, it's important to give some sort of height to it.
+        height of an item is dependent on its font-size
+    -->
+    <div class="container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+        <div class="box box6">6</div>
+        <div class="box box7">7</div>
+        <div class="box box8">8</div>
+        <div class="box box9">9</div>
+        <div class="box box10">10</div>
+    </div>
+
+</body>
+
+</html>
